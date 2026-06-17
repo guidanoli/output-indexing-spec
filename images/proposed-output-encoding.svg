@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 330" role="img" aria-label="Proposed topic output ABI byte layout">
+      <defs>
+        <style>
+          .t{font:13px -apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;fill:#17202a}
+          .m{font:12px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#526173}
+          .h{font:700 13px -apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;fill:#17202a}
+        </style>
+      </defs>
+      <rect x="26" y="38" width="868" height="88" rx="8" fill="#f2f6fb" stroke="#c5d1df"/>
+      <rect x="40" y="56" width="70" height="42" rx="5" fill="#2457a6"/>
+      <text x="75" y="81" text-anchor="middle" fill="#fff" class="h">sel</text>
+
+      <rect x="120" y="56" width="126" height="42" rx="5" fill="#e8f6ef" stroke="#8ec9ad"/>
+      <text x="183" y="75" text-anchor="middle" class="h">topic0</text>
+      <text x="183" y="93" text-anchor="middle" class="m">kind</text>
+
+      <rect x="256" y="56" width="126" height="42" rx="5" fill="#fff7dd" stroke="#d9bf5d"/>
+      <text x="319" y="75" text-anchor="middle" class="h">topic1</text>
+      <text x="319" y="93" text-anchor="middle" class="m">destination/key</text>
+
+      <rect x="392" y="56" width="126" height="42" rx="5" fill="#f0eefb" stroke="#c9c1ee"/>
+      <text x="455" y="75" text-anchor="middle" class="h">topic2</text>
+      <text x="455" y="93" text-anchor="middle" class="m">index key</text>
+
+      <rect x="528" y="56" width="126" height="42" rx="5" fill="#fff0ef" stroke="#e7aaa6"/>
+      <text x="591" y="75" text-anchor="middle" class="h">topic3</text>
+      <text x="591" y="93" text-anchor="middle" class="m">index key</text>
+
+      <rect x="664" y="56" width="96" height="42" rx="5" fill="#eaf1fc" stroke="#aac2e8"/>
+      <text x="712" y="75" text-anchor="middle" class="h">offset</text>
+      <text x="712" y="93" text-anchor="middle" class="m">data</text>
+
+      <rect x="770" y="56" width="108" height="42" rx="5" fill="#eef3f8" stroke="#c5d1df"/>
+      <text x="824" y="75" text-anchor="middle" class="h">tail</text>
+      <text x="824" y="93" text-anchor="middle" class="m">len + data</text>
+
+      <rect x="35" y="135" width="39" height="19" rx="4" fill="#fff"/><text x="40" y="148" class="m">1..4</text>
+      <rect x="115" y="135" width="46" height="19" rx="4" fill="#fff"/><text x="120" y="148" class="m">5..36</text>
+      <rect x="251" y="135" width="53" height="19" rx="4" fill="#fff"/><text x="256" y="148" class="m">37..68</text>
+      <rect x="387" y="135" width="60" height="19" rx="4" fill="#fff"/><text x="392" y="148" class="m">69..100</text>
+      <rect x="523" y="135" width="68" height="19" rx="4" fill="#fff"/><text x="528" y="148" class="m">101..132</text>
+      <rect x="659" y="135" width="68" height="19" rx="4" fill="#fff"/><text x="664" y="148" class="m">133..164</text>
+      <rect x="765" y="135" width="68" height="19" rx="4" fill="#fff"/><text x="770" y="148" class="m">from 165</text>
+
+      <line x1="183" y1="126" x2="183" y2="205" stroke="#237457" stroke-width="2"/>
+      <line x1="319" y1="126" x2="319" y2="205" stroke="#8b6500" stroke-width="2"/>
+      <line x1="455" y1="126" x2="455" y2="205" stroke="#6154a8" stroke-width="2"/>
+      <line x1="591" y1="126" x2="591" y2="205" stroke="#a13a36" stroke-width="2"/>
+
+      <rect x="66" y="198" width="228" height="86" rx="8" fill="#e8f6ef" stroke="#8ec9ad"/>
+      <text x="180" y="224" text-anchor="middle" class="h">topic0</text>
+      <text x="180" y="247" text-anchor="middle" class="m">notice, voucher</text>
+      <text x="180" y="264" text-anchor="middle" class="m">delegatecall</text>
+
+      <rect x="306" y="198" width="228" height="86" rx="8" fill="#fff7dd" stroke="#d9bf5d"/>
+      <text x="420" y="224" text-anchor="middle" class="h">topic1</text>
+      <text x="420" y="247" text-anchor="middle" class="m">canonical destination</text>
+      <text x="420" y="264" text-anchor="middle" class="m">for executable calls</text>
+
+      <rect x="546" y="198" width="286" height="86" rx="8" fill="#f0eefb" stroke="#c9c1ee"/>
+      <text x="689" y="224" text-anchor="middle" class="h">topic2/topic3</text>
+      <text x="689" y="247" text-anchor="middle" class="m">application-selected</text>
+      <text x="689" y="264" text-anchor="middle" class="m">indexed fields</text>
+    </svg>

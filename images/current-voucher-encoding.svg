@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 300" role="img" aria-label="Current voucher byte layout">
+      <defs>
+        <style>
+          .t{font:13px -apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;fill:#17202a}
+          .m{font:12px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#526173}
+          .h{font:700 13px -apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;fill:#17202a}
+        </style>
+      </defs>
+      <rect x="30" y="42" width="860" height="66" rx="8" fill="#f2f6fb" stroke="#c5d1df"/>
+      <rect x="42" y="58" width="74" height="34" rx="5" fill="#2457a6"/>
+      <text x="79" y="80" text-anchor="middle" fill="#fff" class="h">selector</text>
+      <rect x="126" y="58" width="196" height="34" rx="5" fill="#e8f6ef" stroke="#8ec9ad"/>
+      <text x="224" y="80" text-anchor="middle" class="h">destination word</text>
+      <rect x="332" y="58" width="178" height="34" rx="5" fill="#fff7dd" stroke="#d9bf5d"/>
+      <text x="421" y="80" text-anchor="middle" class="h">value</text>
+      <rect x="520" y="58" width="162" height="34" rx="5" fill="#f0eefb" stroke="#c9c1ee"/>
+      <text x="601" y="80" text-anchor="middle" class="h">payload offset</text>
+      <rect x="692" y="58" width="184" height="34" rx="5" fill="#fff0ef" stroke="#e7aaa6"/>
+      <text x="784" y="80" text-anchor="middle" class="h">payload data</text>
+
+      <rect x="37" y="115" width="82" height="19" rx="4" fill="#fff"/><text x="42" y="128" class="m">bytes 1..4</text>
+      <rect x="121" y="115" width="89" height="19" rx="4" fill="#fff"/><text x="126" y="128" class="m">bytes 5..36</text>
+      <rect x="327" y="115" width="53" height="19" rx="4" fill="#fff"/><text x="332" y="128" class="m">37..68</text>
+      <rect x="515" y="115" width="60" height="19" rx="4" fill="#fff"/><text x="520" y="128" class="m">69..100</text>
+      <rect x="687" y="115" width="68" height="19" rx="4" fill="#fff"/><text x="692" y="128" class="m">from 133</text>
+
+      <line x1="224" y1="108" x2="224" y2="168" stroke="#237457" stroke-width="2"/>
+      <rect x="76" y="168" width="296" height="70" rx="8" fill="#e8f6ef" stroke="#8ec9ad"/>
+      <text x="224" y="191" text-anchor="middle" class="h">Current indexed address</text>
+      <text x="224" y="211" text-anchor="middle" class="m">destination low 20 bytes</text>
+      <text x="224" y="229" text-anchor="middle" class="m">raw_data[17..36]</text>
+
+      <line x1="785" y1="108" x2="785" y2="248" stroke="#a13a36" stroke-width="2"/>
+      <rect x="598" y="248" width="298" height="42" rx="8" fill="#fff0ef" stroke="#e7aaa6"/>
+      <text x="747" y="273" text-anchor="middle" class="h">Wallet recipient may be inside payload</text>
+    </svg>

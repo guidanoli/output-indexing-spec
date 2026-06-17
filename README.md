@@ -72,7 +72,7 @@ function _executeOutput(bytes memory output) internal {
 
 The database stores those bytes as `output.raw_data`. Current filtering uses expression indexes over fixed byte ranges that happen to correspond to ABI fields.
 
-![](https://hackmd.io/_uploads/Sktv2hO-fg.svg)
+![](images/current-voucher-encoding.svg)
 
 *Current voucher indexing can find the top-level call destination, but not arbitrary fields inside the payload unless the node knows the payload ABI. (Right-click and open image in a new tab to zoom in on the diagram.)*
 
@@ -123,7 +123,7 @@ interface Outputs {
 >
 > That choice is identifier reuse only. It is not wire compatibility with the old `Voucher(address,uint256,bytes)` output bytes, because the top-level output is still `Output(topic0,topic1,topic2,topic3,data)`. The recommendation in this draft is to use versioned `bytes32` schema constants so `topic0` names the envelope schema directly rather than carrying legacy selector names.
 
-![](https://hackmd.io/_uploads/SksAn3_bfe.svg)
+![](images/proposed-output-encoding.svg)
 
 
 *ABI offsets are fixed for every output. PostgreSQL and SQLite can index these byte ranges without storing decoded output rows.*
@@ -319,7 +319,7 @@ The normal path is still that the Cartesi machine produces outputs and commits t
 
 In the current withdrawal path, `UsdWithdrawalOutputBuilder` builds a delegate-call voucher whose destination is the `SAFE_ERC20_TRANSFER` helper. That byte format should become `DELEGATE_CALL_VOUCHER` in the new envelope. This foreclosure path is not the same as `executeOutput`: `withdraw()` emits `Withdrawal` and is tracked through withdrawal records, while `OutputExecuted`, `executed`, and `listOutputs` apply to machine output rows.
 
-![](https://hackmd.io/_uploads/rkez6n_bMl.svg)
+![](images/proposed-output-execution.svg)
 
 *The contract does not decode application topics. It only enforces the protocol fields needed to execute vouchers safely.*
 
